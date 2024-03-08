@@ -4,7 +4,7 @@ import ImageSlider from './ImageSlider'
 import Accordian from './Accordian'
 import BoxSlider from './Boxslider'
 import CardSlider from './CardSlider'
-import GridSection from './GridSection'
+// import GridSection from './GridSection'
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     <>
     <div className='px-5'>
     <ImageSlider />
-    <GridSection/>
+    {/* <GridSection/> */}
     {/* three lorem card */}
     <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 m-10'>
                 <div className='border-[1px] border-black p-10 rounded-xl hover:scale-105 transition-transform'>
