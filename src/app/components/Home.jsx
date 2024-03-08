@@ -37,9 +37,10 @@ const Home = () => {
         {/* three lorem card */}
         <h1>lola</h1>
 
-        <CardSlider />
 
     <Accordian />
+    <CardSlider />
+
     </div>
    
     </>
