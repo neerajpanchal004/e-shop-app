@@ -2,6 +2,7 @@
 import React, { useContext, useEffect,useState } from 'react'
 import { UserContext } from '../context/Contextapi'
 import {getData} from './Constant'
+import GridSection from './GridSection'
 // import axios from 'axios'
 
 
@@ -33,6 +34,7 @@ const Mobiles = () => {
     console.log(mobile)
     return (
         <>
+        <GridSection/>
             {mobile !== undefined && mobile.map((Mobile) => {
                 const { name, image, price, storage,} = Mobile;
                 return (
