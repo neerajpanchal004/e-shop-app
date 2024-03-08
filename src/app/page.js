@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
     <Header />
-    <Home/>
+    {/* <Home/> */}
     <Footer />
     
     </>
