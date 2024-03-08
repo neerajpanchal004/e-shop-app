@@ -25,15 +25,16 @@ const CardSlider = () => {
     ]
             
   return (
-    ImageData.map((image)=>{
-        return(
-            <div>
-                <img src={image} alt="Card" />
-            </div>
+    // ImageData.map((image)=>{
+    //     return(
+    //         <div>
+    //             <img src={image} alt="Card" />
+    //         </div>
+    <div>hyyy</div>
         )
         
-})
-  )
+// })
+//   )
 }
 
 export default CardSlider
