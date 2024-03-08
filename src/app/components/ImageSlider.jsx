@@ -1,6 +1,6 @@
 // ImageSlider.js
 import React, { useState, useEffect } from 'react';
-import GridSection from './GridSection';
+// import GridSection from './GridSection';
 
 
 const images = [
@@ -34,7 +34,7 @@ const ImageSlider = () => {
 
   return (
     <>
-    <GridSection/>
+    {/* <GridSection/> */}
     <div className="relative w-full max-w-screen-xl mx-auto">
       <div className="relative overflow-hidden object-fill">
         <img

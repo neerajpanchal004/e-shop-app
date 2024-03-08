@@ -5,6 +5,7 @@ import { UserContext } from "../context/Contextapi";
 import { Link } from "@chakra-ui/react";
 // import { UserContext } from "../context/Contextapi";
 import { useRouter } from "next/navigation";
+import GridSection from "./GridSection";
 
 const Login = () => {
     const  router = useRouter();
@@ -29,6 +30,8 @@ const Login = () => {
                 <button type="submit">Submit</button>
             </form>
             <Link href="/signup">Sign Up Here!</Link>
+
+            <GridSection/>
         </>
     )
 }
