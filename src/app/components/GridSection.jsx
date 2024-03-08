@@ -1,12 +1,15 @@
 import React from 'react'
 
 const GridSection = () => {
+    const Data = ["hyy","hello","gand","marao"]
   return (
     <>
     <div>
-        <h1>hyyy</h1>
-        <p>this is my name neeaj
-        </p>
+        {Data.map((it)=>{
+            return(
+                <h1>{it}</h1>
+            )
+        })}
     </div>
     </>
   )
