@@ -2,7 +2,7 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
 import Accordian from './Accordian'
-import BoxSlider from './Boxslider'
+// import BoxSlider from './Boxslider'
 import CardSlider from './CardSlider'
 // import GridSection from './GridSection'
 
