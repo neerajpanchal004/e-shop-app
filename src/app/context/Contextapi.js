@@ -13,6 +13,7 @@ import { createContext, useState } from "react";
     const [logindata, setLogindata] = useState()
     const [mobile, setMobile] = useState()
     const [shoes, setShoes] = useState()
+    const [singleCardData, setSingleCardData] = useState()
 
     const statedata = {
         
@@ -37,6 +38,8 @@ import { createContext, useState } from "react";
         setShoes,
         mobile,
         setMobile,
+        singleCardData,
+        setSingleCardData
     }}>
         {children}
     </UserContext.Provider>

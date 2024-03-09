@@ -39,58 +39,59 @@ const Header = () => {
 
 
         {/* shoes */}
-        <div className='bg-red-300 m-5 flex justify-around items-center p-5  shadow-xl mt-16'>
-          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-125 transition-transform  '>
+        <div className='bg-red-300 m-5 flex justify-around items-center shadow-xl mt-16'>
+          <Link href='/shoes'>
+          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
+
             <Image src="/img/shoes-icon.png" width={100} height={100} />
-            <Link href='/shoes'>
 
               <h3>
                 Shoes
               </h3>
-            </Link>
 
           </div>
+            </Link>
 
 
 
           {/* menwear */}
 
-          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-125 transition-transform  '>
-            <Image src="/img/menwear-icon.png" width={80} height={10} />
             <Link href='/menwear'>
+          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
+            <Image src="/img/menwear-icon.png" width={80} height={10} />
 
               <h3>
                 Menwear              </h3>
-            </Link>
 
           </div>
+            </Link>
 
 
           
 
           {/* sports */}
 
-          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-125 transition-transform  '>
-            <Image src="/img/sports-icon1.png" width={95} height={10} objectFit='contain' className='' />
             <Link href='/sports'>
+          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
+            <Image src="/img/sports-icon1.png" width={95} height={10} objectFit='contain' className='' />
 
               <h3>
                 Sports              </h3>
-            </Link>
 
           </div>
+            </Link>
 
           {/*  mobiles*/}
-          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-125 transition-transform  '>
-            <Image src="/img/mobile-icon.png" width={85} height={100} />
             <Link href='/mobiles'>
+          <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
+            <Image src="/img/mobile-icon.png" width={85} height={100} />
 
               <h3>
                 Mobiles
               </h3>
-            </Link>
 
           </div>
+            </Link>
 
 
 
