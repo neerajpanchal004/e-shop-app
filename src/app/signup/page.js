@@ -1,7 +1,8 @@
 // "use client"
 import React from 'react'
 import Signup from '../components/Signup'
-// import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+
 
 const page = () => {
     // const router = useRouter()
@@ -9,8 +10,11 @@ const page = () => {
 
   return (
     <>
-    
-    <Signup/>
+    <div>
+      <Image src="/img/signup-bg.jpg" alt="Background image for login screen" layout='fill' objectFit='cover'/>
+      <Signup/>
+
+    </div>
     </>
   )
 }

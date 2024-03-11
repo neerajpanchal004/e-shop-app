@@ -14,6 +14,12 @@ import { createContext, useState } from "react";
     const [mobile, setMobile] = useState()
     const [shoes, setShoes] = useState()
     const [singleCardData, setSingleCardData] = useState()
+    const [menWear, setMenWear] = useState()
+    const [sports, setSports] = useState()
+    const [route, setRoute] = useState()
+    const [random, setRandom] = useState()
+    const [singleProduct, setSingleProduct] = useState()
+    const [loginDrawer, setLoginDrawer] = useState(false)
 
     const statedata = {
         
@@ -38,8 +44,18 @@ import { createContext, useState } from "react";
         setShoes,
         mobile,
         setMobile,
+        menWear,
+        setMenWear,
+        sports,
+        setSports,
         singleCardData,
-        setSingleCardData
+        setSingleCardData,
+        route,
+        setRoute,
+        singleProduct,
+        setSingleProduct,
+        loginDrawer,
+        setLoginDrawer
     }}>
         {children}
     </UserContext.Provider>

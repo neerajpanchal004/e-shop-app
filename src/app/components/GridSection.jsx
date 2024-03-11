@@ -24,23 +24,14 @@ const GridSection = () => {
         <>
             <div className='grid grid-cols-4 gap-10 m-3  p-10'>
 
-                {/* {ImageData.map((image) => {
+                
 
-                    return (
-                        <Link href={"#"}>
-
-                            <div className='p-10 shadow-lg transition-transform hover:scale-110'>
-                                <img src={image} className='object-contain ' />
-                            </div>
-                        </Link>
-
-                    )
-                })} */}
+                
                 {ImageData.map((image, index) => {
-    let categoryHref = "/sports"; // default href
+    let categoryHref = "/sports"; 
 
     if (index + 1 <= 4) {
-        categoryHref = "/mobile";
+        categoryHref = "/mobiles";
     } else if (index + 1 <= 8) {
         categoryHref = "/menwear";
     } else if (index +1 <= 12) {

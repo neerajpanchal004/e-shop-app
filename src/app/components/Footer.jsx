@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <>
 
-            <div className='p-5 mt-5'>
+            <div className='p-5 mt-10'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-10'>
-                    <div>
+                    <div className='flex flex-col gap-1'>
                         <p><b>Get to Know Us</b></p>
                         <p>Careers</p>
                         <p>Blog</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div>
+                    <div className='flex flex-col gap-1'>
                         <p><b>Make Money with Us</b></p>
                         <p>Sell products</p>
                         <p>Become an Affiliate</p>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div>
+                    <div className='flex flex-col gap-1'>
                         <p><b>Let Us Help You</b></p>
                         <p>Your Account</p>
                         <p>Shipping Rates & Policies</p>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div>
+                    <div className='flex flex-col gap-1'>
                         <p><b>Privacy</b></p>
                         <p>Reload Balance</p>
                         <p>Conditions Of Use</p>
@@ -51,7 +51,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='flex justify-center gap-10 py-5 items-center border-b-[1px] border-black my-2 '>
+                <div className='flex justify-center gap-10 py-5 items-center border-b-[1px] border-black mt-5 '>
                     <p className='text-xl '><b>Social links</b></p>
                     <Link href="https://github.com/neerajpanchal004">
                          <FaGithub size={30} className='hover:scale-125 transition-transform'/>
