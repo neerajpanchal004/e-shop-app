@@ -12,20 +12,23 @@ const Shoes = () => {
 
 
     useEffect(() => {
-        let apipoint = "/api/getProducts?category=shoes";
-        getData(apipoint, setFirst);
+        setTimeout(() => {
+            let apipoint = "/api/getProducts?category=shoes";
+            getData(apipoint, setFirst);
+        }, 10000);
+       
     }, []);
-if(first===undefined){
+// if(first===undefined){
 
-    return <Loader/>
-}
+//     return <Loader/>
+// }
 
 setRoute("shoes")
     return (
         <>
                             <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3  gap-x-5 gap-y-16 px-10 py-10'>
 
-            {first.map((Shoes) => {
+            {first !==undefined && first.map((Shoes) => {
                 // const { name, image, price} = Shoes;
                 return (
                     // <div key={name} >

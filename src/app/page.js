@@ -14,13 +14,7 @@ const page = () => {
  
   return (
     <>
-    {/* <Header /> */}
     <Home/>
-    {/* <Footer /> */}
-    {/* <Shimmer/>
-    <Loading/>
-    <LoadingComponent/> */}
-    
     </>
     
   )

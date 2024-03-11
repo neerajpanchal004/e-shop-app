@@ -20,6 +20,7 @@ const Mobiles = () => {
     if (mobile === undefined) {
         return <Loader />
     }
+    console.log(mobile)
     setRoute("mobiles")
     return (
         <>
