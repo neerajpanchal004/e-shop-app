@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
         
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 mt-20">
             
           <div className="drawer-content bg-white rounded-lg p-8 w-[85%] sm:w-[80%] lg:w-[60%] sm:flex  justify-between  ">
           <div className='sm:mr-10'>

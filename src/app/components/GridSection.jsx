@@ -1,7 +1,13 @@
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React,{useEffect, useState} from 'react'
+import { CiHeart } from "react-icons/ci";
+
 
 const GridSection = () => {
+    const [wishList, setWishList] = useState(false)
+    const [first, setFirst] = useState(<CiHeart size={24}/>)
+    // const [second, setSecond] = useState("❤️")
     const ImageData = [
         "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/t/u/-original-imagxhd5xtjuwnqz.jpeg?q=70",
         "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/s/l/-original-imagtnqjjuc6dh6v.jpeg?q=70",
@@ -20,32 +26,41 @@ const GridSection = () => {
         "https://rukminim2.flixcart.com/image/612/612/ksgehzk0/board/g/o/i/carrom-board-for-kids-26-inch-medium-size-glossy-finish-coins-original-imag6ynmdfshzngx.jpeg?q=70",
         "https://rukminim2.flixcart.com/image/612/612/l4rd0280/bicycle-lock/i/i/h/1-12-bike-lock-cable-bike-locks-with-complimentary-mounting-original-imagfh9mjz6fe9d3.jpeg?q=70",
     ]
+
+       
+        
+    
     return (
         <>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 lg:gap-10 m-3 p-5 lg:p-10'>
 
-                
 
-                
+
+
                 {ImageData.map((image, index) => {
-    let categoryHref = "/sports"; 
+                    let categoryHref = "/sports";
 
-    if (index + 1 <= 4) {
-        categoryHref = "/mobiles";
-    } else if (index + 1 <= 8) {
-        categoryHref = "/menwear";
-    } else if (index +1 <= 12) {
-        categoryHref = "/shoes";
-    }
+                    if (index + 1 <= 4) {
+                        categoryHref = "/mobiles";
+                    } else if (index + 1 <= 8) {
+                        categoryHref = "/menwear";
+                    } else if (index + 1 <= 12) {
+                        categoryHref = "/shoes";
+                    }
 
-    return (
-        <Link key={index} href={categoryHref}>
-            <div className='p-3 sm:p-6 lg:p-10 shadow-lg transition-transform hover:scale-110 h-80 w-full'>
-                <img src={image} className='object-contain h-full' />
-            </div>
-        </Link>
-    );
-})}
+                    return (
+                        <div className='p-3 sm:p-6 lg:p-10 shadow-lg transition-transform hover:scale-110 h-80 w-full'>
+                            <Link key={index} href={categoryHref}>
+
+                                <img src={image} className='object-contain h-[90%]' />
+                            </Link>
+
+                            <h1>Lorem ipsum, dolor sit</h1>
+                            <div className='flex justify-end items-end' onClick={()=>setWishList(!wishList)}>{wishList?"❤️":<CiHeart size={24}/>}</div>
+
+                        </div>
+                    );
+                })}
 
 
 

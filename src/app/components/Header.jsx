@@ -51,7 +51,7 @@ const Header = () => {
 
 
         {/* shoes */}
-        <div className='bg-blue-300 m-5 flex justify-around items-center shadow-xl mt-20'>
+        <div className='bg-blue-300 my-5 flex justify-around items-center shadow-xl mt-20'>
           <Link href='/products/shoes'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
 
