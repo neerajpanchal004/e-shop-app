@@ -17,7 +17,6 @@ import { createContext, useState } from "react";
     const [menWear, setMenWear] = useState()
     const [sports, setSports] = useState()
     const [route, setRoute] = useState()
-    const [random, setRandom] = useState()
     const [singleProduct, setSingleProduct] = useState()
     const [loginDrawer, setLoginDrawer] = useState(false)
 

@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
     if (req.method  == "GET") {
         let data;
-        if(req.query.category=="mobile"){
+        if(req.query.category=="mobiles"){
            data = Mobiles 
         }
 

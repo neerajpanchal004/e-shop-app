@@ -11,7 +11,7 @@ const Sports = () => {
 
 
     useEffect(() => {
-        let apipoint = "/api/getProducts?category=sport";
+        let apipoint = "/api/getProducts?category=sports";
         getData(apipoint, setSports);
 
     }, [])
