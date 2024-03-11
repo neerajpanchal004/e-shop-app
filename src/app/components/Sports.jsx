@@ -16,7 +16,7 @@ const Sports = () => {
 
     }, [])
     if (sports === undefined) {
-        return <div>Loading...</div>
+        return <Loader/>
     }
     setRoute("sports")
     return (

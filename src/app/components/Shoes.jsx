@@ -7,28 +7,27 @@ import Loader from './Loader'
 
 
 const Shoes = () => {
-    const { shoes, setShoes,setRoute,loading,setLoading } = useContext(UserContext)
-    const [first, setFirst] = useState()
+    const { shoes, setShoes,setRoute, } = useContext(UserContext)
 
 
     useEffect(() => {
-        setTimeout(() => {
+       
             let apipoint = "/api/getProducts?category=shoes";
-            getData(apipoint, setFirst);
-        }, 10000);
+            getData(apipoint, setShoes);
+       
        
     }, []);
-// if(first===undefined){
+if(shoes===undefined){
 
-//     return <Loader/>
-// }
+    return <Loader/>
+}
 
 setRoute("shoes")
     return (
         <>
                             <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3  gap-x-5 gap-y-16 px-10 py-10'>
 
-            {first !==undefined && first.map((Shoes) => {
+            {shoes.map((Shoes) => {
                 // const { name, image, price} = Shoes;
                 return (
                     // <div key={name} >
