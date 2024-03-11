@@ -1,122 +1,43 @@
-// import React from 'react'
-
-// const Loader = () => {
-//   return (
-//     <div className="loader w-16 h-16 rounded-full border-t-4 border-red-300 border-solid animate-spin"></div>
-
-//   )
-// }
-
-// export default Loader
 
 
+import React from 'react'
 
+const Loader = () => {
+  return (
+    <div className='flex items-center justify-center align-middle'>
+  <svg height="108px" width="108px" viewBox="0 0 128 128" class="loader">
+    <defs>
+      <clipPath id="loader-eyes">
+        <circle transform="rotate(-40,64,64) translate(0,-56)" r="8" cy="64" cx="64" class="loader__eye1"></circle>
+        <circle transform="rotate(40,64,64) translate(0,-56)" r="8" cy="64" cx="64" class="loader__eye2"></circle>
+      </clipPath>
+      <linearGradient y2="1" x2="0" y1="0" x1="0" id="loader-grad">
+        <stop stop-color="#000" offset="0%"></stop>
+        <stop stop-color="#fff" offset="100%"></stop>
+      </linearGradient>
+      <mask id="loader-mask">
+        <rect fill="url(#loader-grad)" height="128" width="128" y="0" x="0"></rect>
+      </mask>
+    </defs>
+    <g stroke-dasharray="175.93 351.86" stroke-width="12" stroke-linecap="round">
+      <g>
+        <rect clip-path="url(#loader-eyes)" height="64" width="128" fill="hsl(193,90%,50%)"></rect>
+        <g stroke="hsl(193,90%,50%)" fill="none">
+          <circle transform="rotate(180,64,64)" r="56" cy="64" cx="64" class="loader__mouth1"></circle>
+          <circle transform="rotate(0,64,64)" r="56" cy="64" cx="64" class="loader__mouth2"></circle>
+        </g>
+      </g>
+      <g mask="url(#loader-mask)">
+        <rect clip-path="url(#loader-eyes)" height="64" width="128" fill="hsl(223,90%,50%)"></rect>
+        <g stroke="hsl(223,90%,50%)" fill="none">
+          <circle transform="rotate(180,64,64)" r="56" cy="64" cx="64" class="loader__mouth1"></circle>
+          <circle transform="rotate(0,64,64)" r="56" cy="64" cx="64" class="loader__mouth2"></circle>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+  )
+}
 
-// YourComponent.js
-"use client"
-
-import React from 'react';
-
-const Loader = () => (
-  <>
-    <style jsx>{`
-      @keyframes pulse {
-        0% {
-          transform: scale(0.6);
-          opacity: 1;
-        }
-        50% {
-          transform: scale(1.2);
-          opacity: 0;
-        }
-        100% {
-          transform: scale(0.6);
-          opacity: 1;
-        }
-      }
-
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      .loader-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      .loader {
-        width: 70px;
-        height: 70px;
-        position: relative;
-      }
-
-      .loader .before {
-        content: "";
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        border: 6px solid #007bff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        animation: pulse 1s ease-in-out infinite;
-      }
-
-      .loader .after {
-        content: "";
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        border: 6px solid transparent;
-        border-top-color: #007bff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        animation: spin 2s linear infinite;
-      }
-
-      .loader-text {
-        font-size: 24px;
-        margin-top: 20px;
-        color: #007bff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      .content {
-        display: none;
-      }
-
-      .loaded .loader-container {
-        display: none;
-      }
-
-      .loaded .content {
-        display: block;
-      }
-    `}</style>
-    
-    <div className="loader-container">
-      <div className="loader">
-        <div className="before"></div>
-        <div className="after"></div>
-      </div>
-      <div className="loader-text">Loading...</div>
-    </div>
-
-    <div className="content hidden">
-      {/* Your content goes here */}
-    </div>
-  </>
-);
-
-export default Loader;
+export default Loader

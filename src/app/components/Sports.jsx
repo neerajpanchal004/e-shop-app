@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { UserContext } from '../context/Contextapi'
 import { getData } from './Constant'
 import ProductCard from './ProductCard'
+import Loader from './Loader'
 
 
 const Sports = () => {
