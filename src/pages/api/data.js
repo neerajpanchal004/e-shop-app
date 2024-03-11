@@ -393,3 +393,6 @@ export const Mobiles =  [
       "rating":5
     }
   ]
+
+
+  export const SignupDetails = []

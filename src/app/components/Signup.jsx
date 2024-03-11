@@ -22,7 +22,7 @@ const Signup = () => {
       email,
       password
     }
-    const apipoint = "/api/signup"
+    const apipoint = "/api/postAuth"
     postUsers(apipoint,data)
 
   };

@@ -9,7 +9,7 @@ import Loader from './Loader'
 
 const Mobiles = () => {
     const { mobile, setMobile,setRoute } = useContext(UserContext)
-    const [first, setfirst] = useState()
+    const [first, setFirst] = useState()
 
 
 
