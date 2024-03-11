@@ -12,7 +12,7 @@ const Footer = () => {
 
             <div className='p-5 mt-10'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-10'>
-                    <div className='flex flex-col gap-1'>
+                    <div className='flex flex-col gap-1 my-5 sm:my-0'>
                         <p><b>Get to Know Us</b></p>
                         <p>Careers</p>
                         <p>Blog</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div className='flex flex-col gap-1'>
+                    <div className='flex flex-col gap-1 my-5 sm:my-0'>
                         <p><b>Make Money with Us</b></p>
                         <p>Sell products</p>
                         <p>Become an Affiliate</p>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div className='flex flex-col gap-1'>
+                    <div className='flex flex-col gap-1 my-5 sm:my-0'>
                         <p><b>Let Us Help You</b></p>
                         <p>Your Account</p>
                         <p>Shipping Rates & Policies</p>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
 
-                    <div className='flex flex-col gap-1'>
+                    <div className='flex flex-col gap-1 my-5 sm:my-0'>
                         <p><b>Privacy</b></p>
                         <p>Reload Balance</p>
                         <p>Conditions Of Use</p>

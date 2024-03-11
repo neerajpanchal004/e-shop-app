@@ -66,8 +66,8 @@ const SliderSection = () => {
     };
     return (
 
-        <div mt={3} className=" px-5 py-10 mx-10 my-32 font-roboto">
-            <div className='pl-5 text-3xl'>
+        <div className=" px-5 py-5 lg:py-10 mx:5 lg:mx-10 my-16 lg:my-32 font-roboto">
+            <div className='pl-5 text-2xl lg:text-3xl'>
                 <p>Join Our <span className='text-red-500'>#</span> And Enjoy With Our Products</p>
             </div>
             <Slider {...settings1}>

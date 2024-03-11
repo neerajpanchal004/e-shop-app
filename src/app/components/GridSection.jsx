@@ -22,7 +22,7 @@ const GridSection = () => {
     ]
     return (
         <>
-            <div className='grid grid-cols-4 gap-10 m-3  p-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 lg:gap-10 m-3 p-5 lg:p-10'>
 
                 
 
@@ -40,7 +40,7 @@ const GridSection = () => {
 
     return (
         <Link key={index} href={categoryHref}>
-            <div className='p-10 shadow-lg transition-transform hover:scale-110 h-80'>
+            <div className='p-3 sm:p-6 lg:p-10 shadow-lg transition-transform hover:scale-110 h-80 w-full'>
                 <img src={image} className='object-contain h-full' />
             </div>
         </Link>
