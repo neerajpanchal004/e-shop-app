@@ -12,7 +12,7 @@ const Shoes = () => {
 
     useEffect(() => {
        
-            let apipoint = "/api/getProducts?category=shoes";
+            let apipoint = "/api/shoes";
             getData(apipoint, setShoes);
        
        

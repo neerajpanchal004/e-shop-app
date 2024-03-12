@@ -14,7 +14,7 @@ const Mobiles = () => {
 
 
     useEffect(() => {
-        let apipoint = "/api/getProducts?category=mobiles";
+        let apipoint = "/api/mobiles";
         getData(apipoint, setFirst);
 
     }, [])

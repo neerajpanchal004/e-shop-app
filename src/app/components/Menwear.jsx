@@ -11,7 +11,7 @@ const MenWear = () => {
     
 
     useEffect(() => {
-        let apipoint = "/api/getProducts?category=menwear";
+        let apipoint = "/api/menwear";
         getData(apipoint, setMenWear); 
     }, [])
     
