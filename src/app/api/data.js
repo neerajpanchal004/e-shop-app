@@ -395,4 +395,4 @@ export const Mobiles =  [
   ]
 
 
-  export const SignupDetails = []
+  export const LoginDetails = []

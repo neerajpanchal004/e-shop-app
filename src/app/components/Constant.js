@@ -16,15 +16,15 @@ export async function postUsers(api,data) {
 
 // GET REQUEST
 
-export async function getUsers() {
+// export async function getUsers() {
 
-    try {
-        let response = await axios.get(api + "/authdata");
-        setLogindata(response.data)
-    } catch (error) {
-        console.log(error)
-    }
-}
+//     try {
+//         let response = await axios.get(api + "/authdata");
+//         setLogindata(response.data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
 
 
 
