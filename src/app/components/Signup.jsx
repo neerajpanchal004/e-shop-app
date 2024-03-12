@@ -1,10 +1,12 @@
 "use client"
 
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { FaSkullCrossbones,FaEye,FaEyeSlash } from "react-icons/fa";
 import { UserContext } from '../context/Contextapi';
 import Link from 'next/link';
-import { postUsers } from './Constant';
+// import { postUsers , getData} from './Constant';
+import {useRouter } from 'next/navigation';
+
 
 
 
@@ -12,19 +14,16 @@ import { postUsers } from './Constant';
 const Signup = () => {
    const { setEmail,email,password,setPassword} = useContext(UserContext)
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  const router = useRouter()
+
+  
 
  
 
-  const handleSubmit = (e) => {
+  const handleSubmit =  (e) => {
     e.preventDefault();
-    const data = {
-      email,
-      password
-    }
-    const apipoint = "/api/postAuth"
-    postUsers(apipoint,data)
-
+    console.log("lola")
+      router.push('/login')
   };
 
 
@@ -48,7 +47,6 @@ const Signup = () => {
             </span>
 
             <form className="mb-4 w-full" onSubmit={handleSubmit}>
-              {error && <p className="text-red-500 mb-4">{error}</p>}
 
               <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-600 text-sm font-semibold mb-2">

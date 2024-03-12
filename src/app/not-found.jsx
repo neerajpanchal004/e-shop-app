@@ -14,7 +14,7 @@ const NotFound = () => {
   };
 
   return (
-    <div className='w-full relative'>
+    <div className='w-full z-10 h-[800px] lg:h-auto bg-opacity-100 bg-inherit absolute inset-0'>
       <style jsx global>{`
         @keyframes gradient {
           0% {
@@ -39,7 +39,7 @@ const NotFound = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <div className="text-center text-white z-10">
+        <div className="text-center text-white z-10 ">
           <motion.h1
             className="text-6xl font-extrabold mb-4 animate__animated animate__shakeX"
             initial={{ x: -100, opacity: 0 }}
@@ -60,7 +60,7 @@ const NotFound = () => {
             onClick={handleBackToHome}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-gray-800 flex items-center gap-1 py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300 focus:outline-none"
+            className="bg-white text-gray-800 flex  items-center gap-1 py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300 focus:outline-none"
           >
             <FaArrowCircleLeft /> Back to Home
           </motion.button>
@@ -72,7 +72,7 @@ const NotFound = () => {
       </motion.div>
       <div>
       </div>
-      <div className='absolute bottom-56'><Robot /></div>
+      <div className='absolute bottom-40 lg:bottom-56 '><Robot /></div>
 
     </div>
   );

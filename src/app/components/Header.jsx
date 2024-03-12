@@ -52,7 +52,7 @@ const Header = () => {
 
         {/* shoes */}
         <div className='bg-blue-300 my-5 flex justify-around items-center shadow-xl mt-20'>
-          <Link href='/products/shoes'>
+          <Link href='/shoes'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
 
             <Image src="/img/shoes-icon.png" width={100} height={100} className='hidden sm:block'/>
@@ -68,7 +68,7 @@ const Header = () => {
 
           {/* menwear */}
 
-            <Link href='/products/menwear'>
+            <Link href='/menwear'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
             <Image src="/img/menwear-icon.png" width={80} height={10} className='hidden sm:block'/>
 
@@ -83,7 +83,7 @@ const Header = () => {
 
           {/* sports */}
 
-            <Link href='/products/sports'>
+            <Link href='/sports'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
             <Image src="/img/sports-icon1.png" width={95} height={10} objectFit='contain' className='hidden sm:block'/>
 
@@ -94,7 +94,7 @@ const Header = () => {
             </Link>
 
           {/*  mobiles*/}
-            <Link href='/products/mobiles'>
+            <Link href='git /mobiles'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
             <Image src="/img/mobile-icon.png" width={85} height={100} className='hidden sm:block'/>
 

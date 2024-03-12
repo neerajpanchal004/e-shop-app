@@ -1,6 +1,6 @@
-const { NextResponse } = require("next/server");
-const { Login } = require("../data");
+import { NextResponse } from "next/server"
+import { LoginDetails } from "../data"
 
-function GET(req){
-    return NextResponse.json(Login)
+export function GET(req){
+    return NextResponse.json(LoginDetails)
 }

@@ -4,23 +4,26 @@ import { useContext, useState } from 'react';
 import { FaSkullCrossbones,FaEye,FaEyeSlash } from "react-icons/fa";
 import { UserContext } from '../context/Contextapi';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 
 
 
 const Login = () => {
-   const { setUsername, setUserpassword, logindata, username, userpassword,loginDrawer,setLoginDrawer } = useContext(UserContext)
+   const { setUsername, setUserpassword, logindata, username, userpassword,email,password} = useContext(UserContext)
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const router = useRouter()
 
  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === 'user@example.com' && password === 'password123') {
+    if (username == email && userpassword == password) {
       setError('');
       alert('Login successful!');
+      router.push('/')
     } else {
       setError('Invalid email or password');
     }
