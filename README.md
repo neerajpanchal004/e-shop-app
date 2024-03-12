@@ -78,7 +78,28 @@ Open http://localhost:3000 in your browser.
 Explore different pages and functionalities.
 
 Screenshots
-Include screenshots of key pages and features. You can create a "screenshots" folder in your project and reference them here.
+
+## Homepage
+![e-shop-app-beta vercel app_](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/3e630a39-f4ef-4fb8-9df1-d100a58282ad)
+
+## Login
+![e-shop-app-beta vercel app_login](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/b043dc55-d97f-4876-b023-f2ca3fc1a349)
+
+ ## Shoes
+ ![e-shop-app-beta vercel app_shoes](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/11b6844a-4d29-4feb-b65f-6100096bed9a)
+
+ ## 404
+  ![Screenshot 2024-03-12 195447](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/0976f226-6b1e-497b-8450-e23778b817c4)
+
+### Mobile Screen
+## Homepage
+![e-shop-app-beta vercel app_(iPhone 14 Pro Max)](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/4340c0c1-b918-45b9-80bd-2e9e72ec1720)
+
+## Signup
+![e-shop-app-beta vercel app_login(iPhone 14 Pro Max)](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/86b792f1-a9b9-4a57-bf40-b7c89fba680b)
+
+## Sports
+![e-shop-app-beta vercel app_sports(iPhone 14 Pro Max)](https://github.com/neerajpanchal004/e-shop-app/assets/141296714/9a2dc6b1-f918-4874-96fa-6c4743f61031)
 
 ## GitHub Link
 
@@ -86,7 +107,7 @@ Include screenshots of key pages and features. You can create a "screenshots" fo
 
 ## Deployed Application
 
-[Live Demo](https://your-deployment-link.com)
+[Live Demo](https://e-shop-app-beta.vercel.app/)
 
 ## Author
 
