@@ -25,7 +25,7 @@ const Header = () => {
       <div className='bg-white'>
         <div className='flex sm:justify-between px-5 py-2 fixed top-0 z-10 w-full bg-white'>
           <div className='flex justify-center items-center'>
-          <h1 className='font-roboto  sm:ml-10 lg:20 text-2xl sm:text-3xl hover:scale-110 transition-transform'>E-Shop</h1>
+          <Link href='/'><h1 className='font-roboto  sm:ml-10 lg:20 text-2xl sm:text-3xl hover:scale-110 transition-transform'>E-Shop</h1></Link>
           <ButterFly/>
 
           </div>
@@ -94,7 +94,7 @@ const Header = () => {
             </Link>
 
           {/*  mobiles*/}
-            <Link href='git /mobiles'>
+            <Link href='/mobiles'>
           <div className='flex flex-col items-center hover:shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] p-5 hover:scale-110 transition-transform  '>
             <Image src="/img/mobile-icon.png" width={85} height={100} className='hidden sm:block'/>
 
