@@ -9,16 +9,19 @@ import { useRouter } from 'next/navigation';
 
 
 
+
 const Login = () => {
    const { setUsername, setUserpassword, logindata, username, userpassword,email,password} = useContext(UserContext)
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const router = useRouter()
+ 
 
  
 
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();  
 
     if (username == email && userpassword == password) {
       setError('');
@@ -27,9 +30,8 @@ const Login = () => {
     } else {
       setError('Invalid email or password');
     }
-  };
 
-
+  }
   return (
     <div className="min-h-screen flex items-center justify-center">
         

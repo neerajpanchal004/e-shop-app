@@ -7,6 +7,7 @@ import axios from "axios"
 export async function postUsers(api,data) {
     try {
         let response = await axios.post(api, data);
+        console.log(response.data)
     } catch (error) {
         console.log(error)
     }

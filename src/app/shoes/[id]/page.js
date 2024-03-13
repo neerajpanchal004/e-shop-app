@@ -2,16 +2,18 @@
 import { getData } from '@/app/components/Constant';
 import Loader from '@/app/components/Loader';
 import { UserContext } from '@/app/context/Contextapi';
+import { Cambay } from 'next/font/google';
 import { useParams, } from 'next/navigation'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, } from 'react'
+
 
 const Page = () => {
-  
+ 
   const {setSingleCardData, singleCardData}=useContext(UserContext)
   // const router = useRouter()
   const { id } = useParams();
   useEffect(() => {
-    let api = `/api/menwear/${id}`;
+    let api = `/api/shoes/${id}`;
     getData(api, setSingleCardData)
   }, [])
 
@@ -22,14 +24,14 @@ const Page = () => {
   let sizeofproduct = size.map((size)=>size+", ")
   return (
     <>
-      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl md:w-[80%] md:h-[400px] w-full">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl md:w-[80%] md:h-[500px] w-full">
         <div class="md:flex">
           <div class="md:flex-shrink-0 my-10 h-96">
             <img class="h-full w-full object-contain " src={image} alt="Product Image"/>
           </div>
           <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Red Tape</div>
-            <p class="mt-2 text-gray-900">Product Name:<b>{name}</b></p>
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{company}</div>
+            <p class="mt-2 text-gray-900"><b>{name}</b></p>
             <p class="mt-2 text-gray-600">Size: {sizeofproduct}</p>
             <p class="mt-2 text-gray-600">Price: ₹{price}</p>
             <span class="mt-2 text-white px-5 rounded-r-2xl bg-blue-700">{rating}</span>

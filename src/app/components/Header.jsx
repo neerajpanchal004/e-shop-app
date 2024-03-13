@@ -24,8 +24,8 @@ const Header = () => {
     <>
       <div className='bg-white'>
         <div className='flex sm:justify-between px-5 py-2 fixed top-0 z-10 w-full bg-white'>
-          <div className='flex justify-center items-center'>
-          <Link href='/'><h1 className='font-roboto  sm:ml-10 lg:20 text-2xl sm:text-3xl hover:scale-110 transition-transform'>E-Shop</h1></Link>
+          <div className='flex justify-center items-center de'>
+          <Link href='/'><h1 className='font-roboto  sm:ml-10 lg:20 text-2xl sm:text-3xl hover:scale-110 transition-transform '>E-Shop</h1></Link>
           <ButterFly/>
 
           </div>
