@@ -3,7 +3,7 @@ import { getData } from '@/app/components/Constant';
 import Loader from '@/app/components/Loader';
 import { UserContext } from '@/app/context/Contextapi';
 import { useParams, } from 'next/navigation'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 const Page = () => {
   
@@ -11,28 +11,27 @@ const Page = () => {
   // const router = useRouter()
   const { id } = useParams();
   useEffect(() => {
-    let api = `/api/menwear/${id}`;
+    let api = `/api/mobiles/${id}`;
     getData(api, setSingleCardData)
   }, [])
 
   if (singleCardData.length === 0) {
     return <Loader/>
   }
-  const { name, company, price, image,size,rating } = singleCardData;
-  let sizeofproduct = size.map((size)=>size+", ")
+  const { name, company, price, image,storage,camera } = singleCardData;
   return (
     <>
-      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl md:w-[80%] md:h-[400px] w-full">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl md:w-[80%] md:h-[460px] w-full sm:pb-30">
         <div class="md:flex">
           <div class="md:flex-shrink-0 my-10 h-96">
             <img class="h-full w-full object-contain " src={image} alt="Product Image"/>
           </div>
           <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Red Tape</div>
-            <p class="mt-2 text-gray-900">Product Name:<b>{name}</b></p>
-            <p class="mt-2 text-gray-600">Size: {sizeofproduct}</p>
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{company}</div>
+            <p class="mt-2 text-gray-900"><b>{name}</b></p>
+            <p class="mt-2 text-gray-600">{storage}</p>
+            <p class="mt-2 text-gray-600">{camera}</p>
             <p class="mt-2 text-gray-600">Price: ₹{price}</p>
-            <span class="mt-2 text-white px-5 rounded-r-2xl bg-blue-700">{rating}</span>
 
 
             <p class="mt-2 text-gray-600">Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

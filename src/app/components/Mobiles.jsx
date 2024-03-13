@@ -8,26 +8,23 @@ import Loader from './Loader'
 
 
 const Mobiles = () => {
-    const { mobile, setMobile,setRoute } = useContext(UserContext)
-    const [first, setFirst] = useState()
-
-
+    const { mobile, setMobile,setRoute} = useContext(UserContext)
 
     useEffect(() => {
         let apipoint = "/api/mobiles";
-        getData(apipoint, setFirst);
+        getData(apipoint, setMobile);
 
     }, [])
-    if (first === undefined) {
+    if (mobile === undefined) {
         return <Loader />
     }
-    console.log(first)
     setRoute("mobiles")
+   
     return (
         <>
             <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 border-2  gap-x-5 gap-y-16 px-10'>
 
-                {first.map((Mobile) => {
+                {mobile.map((Mobile) => {
                     // const { name, image, price, storage,} = Mobile;
                     return (
                         <ProductCard key={Mobile.id} {...Mobile} />

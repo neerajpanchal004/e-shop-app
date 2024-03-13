@@ -13,7 +13,7 @@ import { createContext, useState } from "react";
     const [logindata, setLogindata] = useState()
     const [mobile, setMobile] = useState()
     const [shoes, setShoes] = useState()
-    const [singleCardData, setSingleCardData] = useState()
+    const [singleCardData, setSingleCardData] = useState([])
     const [menWear, setMenWear] = useState()
     const [sports, setSports] = useState()
     const [route, setRoute] = useState()

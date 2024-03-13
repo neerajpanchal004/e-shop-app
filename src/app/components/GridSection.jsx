@@ -1,13 +1,10 @@
-"use client"
 import Link from 'next/link'
-import React,{useEffect, useState} from 'react'
+import React from 'react'
 import { CiHeart } from "react-icons/ci";
 
 
 const GridSection = () => {
-    const [wishList, setWishList] = useState(false)
-    const [first, setFirst] = useState(<CiHeart size={24}/>)
-    // const [second, setSecond] = useState("❤️")
+   
     const ImageData = [
         "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/t/u/-original-imagxhd5xtjuwnqz.jpeg?q=70",
         "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/s/l/-original-imagtnqjjuc6dh6v.jpeg?q=70",
@@ -37,7 +34,7 @@ const GridSection = () => {
 
 
 
-                {ImageData.map((image, index) => {
+                 {ImageData.map((image, index) => {
                     let categoryHref = "/sports";
 
                     if (index + 1 <= 4) {
@@ -46,7 +43,7 @@ const GridSection = () => {
                         categoryHref = "/menwear";
                     } else if (index + 1 <= 12) {
                         categoryHref = "/shoes";
-                    }
+                    } 
 
                     return (
                         <div className='p-3 sm:p-6 lg:p-10 shadow-lg transition-transform hover:scale-110 h-80 w-full'>
@@ -56,7 +53,6 @@ const GridSection = () => {
                             </Link>
 
                             <h1>Lorem ipsum, dolor sit</h1>
-                            <div className='flex justify-end items-end' onClick={()=>setWishList(!wishList)}>{wishList?"❤️":<CiHeart size={24}/>}</div>
 
                         </div>
                     );
